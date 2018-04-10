@@ -1,0 +1,25 @@
+{
+  "name": "twitmoji",
+  "version": "1.0.0",
+  "description": "Periodicly change an emoji in your twitter username!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XeliteXirish/TwitMoji.git"
+  },
+  "keywords": [
+    "bot",
+    "twitter",
+    "nodejs",
+    "emoji"
+  ],
+  "author": "Shaun O'Neill (XeliteXirish)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XeliteXirish/TwitMoji/issues"
+  },
+  "homepage": "https://github.com/XeliteXirish/TwitMoji#readme"
+}

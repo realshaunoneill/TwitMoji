@@ -2,7 +2,7 @@
 *.log
 node_modules/
 .idea/
-config.json
+./config.js
 src/config.json
 selfbot.sqlite
 /config.json
@@ -10,3 +10,4 @@ src/static/files/*
 .vscode/
 
 /src/testing.js
+/config.js

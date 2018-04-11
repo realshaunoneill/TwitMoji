@@ -27,18 +27,22 @@ function run() {
             access_token_secret: config.ACCESS_SECRET
         });
 
-        setInterval(() => {
-            const randomEmoji = config.EMOJI_TYPES[Math.floor(Math.random() * config.EMOJI_TYPES.length)];
+        changeName(client);
 
-            client.post('account/update_profile', { name: `${config.USERNAME} ${randomEmoji}` }).then((res) => {
-                console.log(`${info} Changed name to: ${chalk.green(`${config.USERNAME} ${randomEmoji}`)}`);
-            }).catch((err) => {
-                console.error(`${warning} Error updating status, Error: ${err.stack}`);
-            });
-        }, config.UPDATE_TIME_SECONDS);
+        setInterval(changeName(client), config.UPDATE_TIME_SECONDS);
     } catch (err) {
         console.error(`${warning} - Error running program, Error: ${err.stack}`);
     }
+}
+
+function changeName(client) {
+    const randomEmoji = config.EMOJI_TYPES[Math.floor(Math.random() * config.EMOJI_TYPES.length)];
+
+    client.post('account/update_profile', {name: `${config.USERNAME} ${randomEmoji}`}).then((res) => {
+        console.log(`${info} Changed name to: ${chalk.green(`${config.USERNAME} ${randomEmoji}`)}`);
+    }).catch((err) => {
+        console.error(`${warning} Error updating status, Error: ${err.stack}`);
+    });
 }
 
 run();

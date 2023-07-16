@@ -11,7 +11,7 @@
 
 ## Installation Instructions
 
- 1. Clone the project into a directory of your choosing. ```https://github.com/XeliteXirish/TwitMoji.git```
+ 1. Clone the project into a directory of your choosing. ```https://github.com/realshaunoneill/TwitMoji.git```
  2. Enter the newly created directory and run the following command to install dependencies: ```npm install```
  3. Create a twitter application at https://apps.twitter.com and make sure to note down the
  consumer token, consumer secret, access token & access secret key.
